@@ -2,3 +2,5 @@ uv.lock
 .venv
 __pycache__
 Projet_fin_de_module.pdf
+data/.DS_Store
+data/Lot1_A/.DS_Store
