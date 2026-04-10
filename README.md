@@ -81,7 +81,7 @@ $$\text{Perte} = \frac{\text{surface}_{t0} - \text{surface}_{t1}}{\text{surface}
 | Paire | Surface t0 | Surface t1 | Perte |
 |---|---|---|---|
 | val_3 | 16.7 % | 9.6 % | **−42.7 %** |
-| train_128 | 25.0 % | 33.2 % | ⚠️ +32 % (pelouses confondues avec forêt) |
+| train_128 | 25.0 % | 33.2 % | +32 % (pelouses confondues avec forêt) |
 
 ---
 
