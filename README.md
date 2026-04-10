@@ -1,6 +1,6 @@
 # Détection de déforestation par traitement d'image satellite
 
-Projet de fin de module — Traitement d'image  
+Projet de fin de module Traitement d'image  
 Pipeline non supervisé de détection et quantification de la déforestation à partir de paires d'images satellites.
 
 ---
@@ -129,6 +129,6 @@ IMAGE_PAIRS = [
 
 ## Limites
 
-- La méthode ne distingue pas forêt, pelouse et arbustes — tout pixel vert est classé végétation.
+- La méthode ne distingue pas forêt, pelouse et arbustes tout pixel vert est classé végétation.
 - L'histogram matching suppose des conditions photométriques comparables entre les deux images.
 - Sans géoréférencement, les surfaces en pixels ne correspondent pas à des hectares réels.
