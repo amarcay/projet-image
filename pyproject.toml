@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deforestation-pipeline"
+version = "0.1.0"
+description = "Pipeline de détection de déforestation par traitement d'images satellites"
+requires-python = ">=3.10"
+
+dependencies = [
+    # Traitement d'images : chargement, conversion HSV, opérations morphologiques (ouverture/fermeture)
+    "opencv-python>=4.9",
+    # Manipulation matricielle, calcul ratio vert G/(R+G+B), features locales
+    "numpy>=1.26",
+    # K-means (segmentation) + CAH (AgglomerativeClustering) pour choix de k
+    "scikit-learn>=1.4",
+    # Filtres de fenêtre glissante : moyenne locale et variance locale
+    "scikit-image>=0.22",
+    # Dendrogramme pour justifier le choix du nombre de clusters
+    "scipy>=1.12",
+    # Visualisation : histogrammes, images segmentées, carte de déforestation
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "jupyter>=1.0",
+    "ipykernel>=6.29",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
