@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python3:*)",
-      "Bash(.venv/bin/python3:*)",
-      "Bash(ls /Users/alphonsemarcay/Documents/École/image/projet/outputs/t1_cluster_*.png)"
-    ]
-  }
-}
